@@ -1,0 +1,95 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+}
+
+.h1 {
+  font-size: $font-size-xxl;
+  font-weight: $fw-bold;
+}
+
+.h2 {
+  font-size: $font-size-xl;
+  font-weight: $fw-bold;
+}
+
+.h3 {
+  font-size: $font-size-lg;
+  font-weight: $fw-bold;
+}
+
+.h4 {
+  font-size: $font-size-md;
+  font-weight: $fw-bold;
+}
+
+.h5 {
+  font-size: $font-size-sm;
+  font-weight: $fw-semibold;
+}
+
+.h6 {
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: $font-size-lg;
+}
+
+.inner-subtitle {
+  font-size: 20px;
+}
+
+@media (max-width: $media-max-xxl) {
+  .h1 {
+    font-size: 56px;
+  }
+
+  .h2 {
+    font-size: $font-size-lg;
+  }
+
+  .h3 {
+    font-size: $font-size-md;
+  }
+
+  .h4 {
+    font-size: $font-size-sm;
+  }
+
+  .h5 {
+    font-size: $font-size-xs;
+  }
+
+  .h6 {
+  }
+
+  .subtitle {
+    font-weight: 700;
+    font-size: $font-size-md;
+  }
+}
+
+@media (max-width: $media-max-tablet) {
+  .h1 {
+    font-size: 36px;
+  }
+
+  .h2 {
+    font-size: 22px;
+  }
+
+  .inner-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $media-max-sm) {
+  .h1 {
+    font-size: 28px;
+  }
+}

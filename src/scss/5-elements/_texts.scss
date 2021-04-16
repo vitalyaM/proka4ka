@@ -1,0 +1,42 @@
+.p,
+.p1,
+.p2,
+.p3 {
+  margin: 0;
+}
+
+.p {
+  font-size: $font-size-lg;
+}
+
+.p1 {
+  font-size: 15px;
+}
+
+.p2 {
+  font-size: $font-size-xs;
+}
+
+.p3 {
+  font-size: $font-size-xxs;
+}
+
+@media (max-width: $media-max-xl) {
+  .p {
+    font-size: $font-size-sm;
+  }
+
+  .p1 {
+    font-size: $font-size-xs;
+  }
+}
+
+@media (max-width: $media-max-sm-2) {
+  .p {
+    font-size: $font-size-xxs;
+  }
+
+  .p1 {
+    font-size: $font-size-xxs;
+  }
+}

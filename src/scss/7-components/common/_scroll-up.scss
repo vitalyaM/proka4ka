@@ -1,0 +1,63 @@
+.scroll-up {
+  position: fixed;
+  z-index: 2;
+  top: 75%;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  transform: rotate(-180deg);
+  box-shadow: none !important;
+  cursor: pointer;
+  transition: $tr-time $tr-type;
+
+  @media (max-width: $media-max-md) {
+    right: 10px;
+  }
+
+  @media (max-width: $media-max-sm-2) {
+    width: 40px;
+    height: 40px;
+  }
+
+  svg {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+
+    @media (max-width: $media-max-sm-2) {
+      flex: 0 0 30px;
+      width: 30px;
+      height: 30px;
+    }
+
+    path {
+      fill: $color-main;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $color-accent;
+      }
+    }
+  }
+
+  &.is-hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg);
+  }
+}

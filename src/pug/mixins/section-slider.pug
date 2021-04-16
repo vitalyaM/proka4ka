@@ -1,0 +1,47 @@
+mixin section-slider(title, text, img_name, img_path)
+  //? START: SECTION-SLIDER =================================================
+  section.section-slider.section-paddings#section-slider
+    .container
+      .section-slider__slider
+        .swiper-wrapper
+          .swiper-slide
+            .section-slider__item.section-slider-item
+              .section-slider-item__img
+                +webp(1280, 482, img_name, "png", img_path, "Image description")
+              .section-slider-item__content
+                h2.section-slider-item__title.h1
+                  span= title
+                p.section-slider-item__text.p= text
+                ul.section-slider-item__actions
+                  li
+                    a.btn.btn_long.btn_dark(href="#", target="_blank", rel="noopener noreferrer") Shop Now
+                  li
+                    a.btn.btn_transparent-black(href="#", target="_blank", rel="noopener noreferrer") Find it
+          .swiper-slide
+            .section-slider__item.section-slider-item
+              .section-slider-item__img
+                +webp(1280, 482, img_name, "png", img_path, "Image description")
+              .section-slider-item__content
+                h2.section-slider-item__title.h1
+                  span= title
+                p.section-slider-item__text.p= text
+                ul.section-slider-item__actions
+                  li
+                    a.btn.btn_long.btn_dark(href="#", target="_blank", rel="noopener noreferrer") Shop Now
+                  li
+                    a.btn.btn_transparent-black(href="#", target="_blank", rel="noopener noreferrer") Find it
+          .swiper-slide
+            .section-slider__item.section-slider-item
+              .section-slider-item__img
+                +webp(1280, 482, img_name, "png", img_path, "Image description")
+              .section-slider-item__content
+                h2.section-slider-item__title.h1
+                  span= title
+                p.section-slider-item__text.p= text
+                ul.section-slider-item__actions
+                  li
+                    a.btn.btn_long.btn_dark(href="#", target="_blank", rel="noopener noreferrer") Shop Now
+                  li
+                    a.btn.btn_transparent-black(href="#", target="_blank", rel="noopener noreferrer") Find it
+        .slider-pagination
+  //? END: SECTION-SLIDER ===================================================

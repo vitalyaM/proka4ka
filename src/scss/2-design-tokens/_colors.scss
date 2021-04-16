@@ -1,0 +1,106 @@
+$black: #000000;
+$white: #ffffff;
+$white-500: #f1f5f9;
+
+$blueGray-50: #f8fafc;
+$blueGray-100: #f1f5f9;
+$blueGray-200: #e2e8f0;
+$blueGray-300: #cbd5e1;
+$blueGray-400: #94a3b8;
+$blueGray-500: #64748b;
+$blueGray-600: #475569;
+$blueGray-700: #334155;
+$blueGray-800: #1e293b;
+$blueGray-900: #0f172a;
+
+$grayTrue-50: #fafafa;
+$grayTrue-100: #f5f5f5;
+$grayTrue-200: #e5e5e5;
+$grayTrue-300: #d4d4d4;
+$grayTrue-400: #a3a3a3;
+$grayTrue-500: #737373;
+$grayTrue-600: #525252;
+$grayTrue-700: #404040;
+$grayTrue-800: #262626;
+$grayTrue-900: #171717;
+
+$red-50: #fef2f2;
+$red-100: #fee2e2;
+$red-200: #fecaca;
+$red-300: #fca5a5;
+$red-400: #f87171;
+$red-500: #ef4444;
+$red-600: #dc2626;
+$red-700: #b91c1c;
+$red-800: #991b1b;
+$red-900: #7f1d1d;
+
+$orange-50: #fff7ed;
+$orange-100: #ffedd5;
+$orange-200: #fed7aa;
+$orange-300: #fdba74;
+$orange-400: #e79c07;
+$orange-500: #f97316;
+$orange-600: #ea580c;
+$orange-700: #c2410c;
+$orange-800: #9a3412;
+$orange-900: #7c2d12;
+
+$yellow-50: #fefce8;
+$yellow-100: #fef9c3;
+$yellow-200: #fef08a;
+$yellow-300: #fde047;
+$yellow-400: #facc15;
+$yellow-500: #eab308;
+$yellow-600: #ca8a04;
+$yellow-700: #a16207;
+$yellow-800: #854d0e;
+$yellow-900: #713f12;
+
+$green-50: #f0fdf4;
+$green-100: #dcfce7;
+$green-200: #bbf7d0;
+$green-300: #86efac;
+$green-400: #4ade80;
+$green-500: #22c55e;
+$green-600: #16a34a;
+$green-700: #15803d;
+$green-800: #166534;
+$green-900: #14532d;
+
+$blue-50: #eff6ff;
+$blue-100: #dbeafe;
+$blue-200: #bfdbfe;
+$blue-300: #93c5fd;
+$blue-400: #60a5fa;
+$blue-500: #3b82f6;
+$blue-600: #2563eb;
+$blue-700: #1d4ed8;
+$blue-800: #1e40af;
+$blue-900: #1e3a8a;
+
+$color-main: $white;
+$bg-color: $black;
+$color-accent: #89db1a;
+$color-offer: $orange-50;
+$color-scroll-thumb: $grayTrue-400;
+
+$gradient-accent: linear-gradient(254deg, rgba(138, 236, 0, 1) 0%, rgba(180, 129, 27, 1) 100%);
+$gradient-accent-hover: linear-gradient(
+  254deg,
+  darken(rgba(138, 236, 0, 1), 5%) 0%,
+  darken(rgba(180, 129, 27, 1), 5%) 100%
+);
+
+$gradient-secondary: linear-gradient(
+  120deg,
+  rgba(203, 195, 172, 1) 0%,
+  rgba(171, 164, 146, 1) 50%,
+  rgba(203, 195, 172, 1) 100%
+);
+
+$gradient-dark: linear-gradient(0deg, #1d2b37 0%, #5e6a74 100%);
+$gradient-dark-hover: linear-gradient(0deg, darken(#1d2b37, 10%) 0%, darken(#5e6a74, 10%) 100%);
+
+$shadow-light: 0px 3px 6px rgba(0, 0, 0, 0.03);
+$shadow-menu: 0px 2px 5px rgba(54, 61, 77, 0.2);

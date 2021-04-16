@@ -1,0 +1,122 @@
+.banner {
+  .container {
+    overflow: hidden;
+    border-radius: $br-xs;
+
+    &:hover {
+      .banner__img {
+        img {
+          transform: scale($scale-img);
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 24% $base * 10 $base * 10 $base * 10;
+
+    @media (max-width: $media-max-tablet) {
+      padding: 24% $base * 4 $base * 4 $base * 4;
+    }
+
+    @media (max-width: $media-max-sm) {
+      padding: 45% $base * 3 $base * 3 $base * 3;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      transition: $tr-time $tr-type;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%);
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: $base * 4;
+    color: $color-accent;
+
+    span {
+      display: inline-block;
+      margin-right: 24px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @media (max-width: $media-max-tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    p {
+      position: relative;
+      width: 50%;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: $base * 6;
+      padding-left: $base * 12;
+      font-size: 18px;
+
+      @media (max-width: $media-max-tablet) {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      @media (max-width: $media-max-md) {
+        width: 100%;
+        font-size: 14px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+        background: url('../img/index/banner/quote.svg') 0 0 / cover no-repeat;
+      }
+    }
+
+    span {
+      margin-top: $base * 4;
+      font-size: $font-size-xxs;
+
+      @media (max-width: $media-max-tablet) {
+        margin-left: auto;
+      }
+    }
+  }
+}

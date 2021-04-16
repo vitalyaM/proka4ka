@@ -1,0 +1,160 @@
+.cost {
+  position: relative;
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: 0;
+    left: 0;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: transparent radial-gradient(closest-side at 50% 50%, #0a0c0b00 0%, #060606 100%);
+    }
+  }
+
+  &__title {
+    margin-bottom: $base * 4;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: $base * 6;
+    margin-top: $base * 16;
+
+    @media (max-width: $media-max-tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $media-max-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.cost-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: $br-xs;
+  background: rgba(255, 255, 255, 0.07);
+
+  &:first-child {
+    background: linear-gradient(270deg, #88ec00 0%, #000000 100%);
+
+    .cost-item {
+      &__content {
+        padding-left: 125px;
+
+        @media (max-width: $media-max-md) {
+          padding-left: 90px;
+        }
+      }
+      &__title,
+      &__text {
+        color: $white;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &:after {
+      content: '+';
+      display: block;
+      position: absolute;
+      font-size: 22px;
+      font-weight: $fw-bold;
+      top: 50%;
+      right: -5px;
+      transform: translate(100%, -50%);
+      color: $color-accent;
+
+      @media (max-width: $media-max-tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &:last-child {
+    .cost-item {
+      &__content {
+        padding: 0;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 $base * 4;
+
+    @media (max-width: $media-max-tablet) {
+      padding: $base * 4;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 115px;
+    height: 115px;
+    transform: translateY(-50%);
+
+    @media (max-width: $media-max-md) {
+      width: 80px;
+      height: 80px;
+    }
+
+    img {
+      position: absolute;
+      flex: 0 0 100%;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    position: relative;
+    color: $color-accent;
+
+    @media (max-width: $media-max-sm) {
+      font-size: 14px;
+    }
+  }
+
+  &__text {
+    color: #b2b2b2;
+    font-weight: $fw-light;
+  }
+
+  .btn {
+    @media (max-width: $media-max-sm) {
+      height: 73px;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: $opacity-hover;
+  }
+}
+
+.location {
+  a {
+    display: flex;
+    align-items: center;
+
+    svg {
+      flex: 0 0 13px;
+      width: 13px;
+      height: 18px;
+    }
+
+    span {
+      padding-left: $base * 2;
+    }
+
+    &:hover,
+    &:focus {
+      path {
+        fill: $color-main;
+      }
+    }
+  }
+}
+
+.appraisal {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  margin-left: -$base;
+  margin-right: -$base;
+
+  li {
+    padding-left: $base;
+    padding-right: $base;
+  }
+}
+
+.socials {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$base * 2;
+  margin-right: -$base * 2;
+
+  li {
+    padding-left: $base * 2;
+    padding-right: $base * 2;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: $tr-time $tr-type;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+
+    svg {
+      flex: 0 0 28px;
+      width: 28px;
+      height: 28px;
+      border-radius: 4px;
+      overflow: hidden;
+
+      @media (max-width: $media-max-tablet) {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

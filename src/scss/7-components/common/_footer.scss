@@ -1,0 +1,137 @@
+//? START: FOOTER =================================================
+.footer {
+  padding: 0;
+  background: #111111;
+  color: #b2b2b2;
+  font-size: 15px;
+
+  &__body {
+    padding-top: $vertical-padding-xl - ($base * 3);
+    padding-bottom: $vertical-padding-xl - ($base * 3);
+  }
+
+  &__logo {
+    a {
+      max-width: 235px;
+      height: 50px;
+      padding: 0 !important;
+
+      svg {
+        max-width: 235px;
+      }
+    }
+  }
+
+  &__nav {
+    ul {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: -$base * 4;
+      margin-right: -$base * 4;
+      padding: 0;
+
+      @media (max-width: $media-max-sm) {
+        margin-left: -$base * 3;
+        margin-right: -$base * 3;
+      }
+
+      @media (max-width: $media-max-sm-2) {
+        margin: 0;
+      }
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 25%;
+      flex: 0 0 25%;
+      margin: 0 !important;
+      padding: 0 ($base * 4);
+
+      @media (max-width: $media-max-md) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: ($base * 3) !important;
+      }
+
+      @media (max-width: $media-max-sm) {
+        padding: 0 ($base * 3);
+      }
+
+      @media (max-width: $media-max-sm-2) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+
+      &:nth-child(3) {
+        h3 {
+          @media (max-width: $media-max-sm-2) {
+            min-height: 0;
+          }
+        }
+      }
+
+      h3 {
+        overflow: visible;
+        position: relative;
+        width: 100%;
+        min-height: 51px;
+        margin: 0 0 $base * 3;
+        padding: $base * 3;
+        padding-left: 0;
+        font-size: 18px;
+        font-weight: 700;
+        background: transparent;
+        border: none;
+        text-align: left;
+
+        &:before {
+          display: none;
+          transition: $tr-time $tr-type;
+
+          @media (max-width: $media-max-md) {
+            display: block;
+            margin-top: -2px;
+            cursor: pointer;
+          }
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: -($base * 3);
+          left: 0;
+          background-color: #707070;
+        }
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: $base * 3;
+
+        a {
+          padding: $base * 3;
+          color: inherit;
+          padding-left: 0;
+          text-decoration: underline;
+
+          &:hover,
+          &:active {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+//? END: FOOTER ===================================================

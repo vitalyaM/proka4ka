@@ -1,0 +1,102 @@
+//? 1. Your custom variables and variable overwrites.
+$global-color: $color-main;
+$global-font-family: $font-family;
+
+//? 2. Import default variables and available mixins.
+@import '../../../node_modules/uikit/src/scss/variables-theme';
+@import '../../../node_modules/uikit/src/scss/mixins-theme';
+
+//? 3. Your custom mixin overwrites.
+@mixin hook-card() {
+  color: $color-main;
+}
+
+//? 4. Import UIkit.
+// @import '../../../node_modules/uikit/src/scss/uikit-theme';
+// Elements
+@import '../../../node_modules/uikit/src/scss/theme/icon';
+@import '../../../node_modules/uikit/src/scss/components/icon';
+// Common
+@import '../../../node_modules/uikit/src/scss/theme/animation';
+@import '../../../node_modules/uikit/src/scss/components/animation';
+@import '../../../node_modules/uikit/src/scss/theme/close';
+@import '../../../node_modules/uikit/src/scss/components/close';
+// JavaScript
+@import '../../../node_modules/uikit/src/scss/theme/accordion';
+@import '../../../node_modules/uikit/src/scss/components/accordion';
+@import '../../../node_modules/uikit/src/scss/theme/modal';
+@import '../../../node_modules/uikit/src/scss/components/modal';
+@import '../../../node_modules/uikit/src/scss/theme/tab';
+@import '../../../node_modules/uikit/src/scss/components/tab';
+@import '../../../node_modules/uikit/src/scss/components/switcher';
+@import '../../../node_modules/uikit/src/scss/theme/search';
+@import '../../../node_modules/uikit/src/scss/components/search';
+// Utilities
+@import '../../../node_modules/uikit/src/scss/theme/utility';
+@import '../../../node_modules/uikit/src/scss/components/utility';
+@import '../../../node_modules/uikit/src/scss/components/flex';
+@import '../../../node_modules/uikit/src/scss/components/visibility';
+
+.uk-modal-dialog {
+  border-radius: $br-xs;
+}
+
+.uk-modal-body {
+  padding-left: $base * 8;
+  padding-right: $base * 8;
+  padding-bottom: $base * 8;
+
+  @media (max-width: $media-max-tablet) {
+    padding-left: $base * 6;
+    padding-right: $base * 6;
+    padding-bottom: $base * 6;
+  }
+
+  @media (max-width: $media-max-sm) {
+    padding-left: $base * 4;
+    padding-right: $base * 4;
+    padding-bottom: $base * 4;
+  }
+}
+
+[class*='uk-modal-close'] {
+  @media (max-width: $media-max-tablet) {
+    padding: $base * 3;
+  }
+
+  svg {
+    width: $base * 7;
+    height: $base * 7;
+  }
+}
+
+.uk-tab > .uk-active > a,
+.uk-tab > * > a {
+  border: none;
+}
+
+.uk-tab > * {
+  padding-left: 0;
+}
+
+.uk-tab::before {
+  display: none;
+}
+
+.uk-icon.uk-search-icon {
+  width: $base * 8;
+  height: $base * 8;
+  right: 0;
+  left: initial;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.uk-search-input {
+  padding-right: $base * 14;
+}
+
+.uk-search {
+  margin-left: $base * 3;
+  margin-right: $base * 3;
+}

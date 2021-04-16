@@ -1,0 +1,129 @@
+.promo {
+  position: relative;
+  padding-top: 10%;
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 125%;
+    top: 0;
+    left: 0;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding-top: 20%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 0;
+      background: url('../img/proka4ka.svg') 0 0 / contain no-repeat;
+      opacity: 0.06;
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 45%;
+    line-height: 1.3;
+    margin-bottom: $base * 4;
+
+    @media (max-width: $media-max-tablet) {
+      max-width: 75%;
+    }
+
+    span {
+      display: inline-block;
+      margin-right: 24px;
+
+      @media (max-width: $media-max-tablet) {
+        margin-right: 12px;
+      }
+
+      &:first-child {
+        width: 100%;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -$base * 6;
+
+    & > * {
+      margin-bottom: $base * 6;
+    }
+
+    .btn {
+      margin-right: $base * 6;
+    }
+  }
+
+  &__text {
+    position: relative;
+    margin-bottom: $base * 6;
+  }
+
+  &__info {
+    font-weight: $fw-bold;
+    display: flex;
+    align-items: center;
+
+    & > * {
+      margin-right: $base * 3;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-icon {
+      flex: 0 0 31px;
+      width: 31px;
+      height: 31px;
+    }
+    &-count {
+      font-size: 42px;
+      color: $color-accent;
+      line-height: 1;
+      @media (max-width: $media-max-tablet) {
+        font-size: 32px;
+      }
+      @media (max-width: $media-max-sm) {
+        font-size: 24px;
+      }
+    }
+    &-text {
+      font-size: $font-size-xs;
+      max-width: 135px;
+      @media (max-width: $media-max-tablet) {
+        font-size: $font-size-xxs;
+      }
+      @media (max-width: $media-max-sm) {
+        font-size: 10px;
+      }
+    }
+  }
+}

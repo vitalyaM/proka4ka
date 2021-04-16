@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="25" viewBox="0 0 13 25">
+  <defs>
+    <style>
+      .plus-a {
+        fill: #89db1a;
+        font-size: 21px;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+    </style>
+  </defs><text class="plus-a" transform="translate(0 20)">
+    <tspan x="0" y="0">+</tspan>
+  </text>
+</svg>

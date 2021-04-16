@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+
+  &:active,
+  &:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+  }
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $color-scroll-thumb;
+    border-radius: $base;
+
+    @at-root body.js-touch {
+      *::-webkit-scrollbar-thumb {
+        background: transparent;
+      }
+    }
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: darken($color-scroll-thumb, $base * 3);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  color: $color-main;
+  font-family: $font-family;
+  font-size: $font-size-xs;
+  line-height: 1.5;
+
+  background-color: $bg-color;
+}
+
+main {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  flex-grow: 1;
+}

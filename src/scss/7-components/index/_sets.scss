@@ -1,0 +1,125 @@
+.sets {
+  &__title {
+    margin-bottom: $base * 8;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: $base * 6;
+
+    @media (max-width: $media-max-tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: $media-max-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .sets-item {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 330px;
+    height: 100%;
+    padding-top: $base * 8;
+    border-radius: $br-xs * 2;
+    background: transparent linear-gradient(180deg, #1d1d1d 0%, #0c0c0c 100%);
+    transition: $tr-time $tr-type;
+
+    @media (max-width: $media-max-xl) {
+      min-height: auto;
+      padding-top: $base * 4;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      transform: scale($scale-img);
+    }
+
+    &__header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: auto;
+      padding-right: $base * 8;
+    }
+
+    &__price {
+      flex-shrink: 0;
+      padding: $base * 2 $base * 6;
+      margin-right: $base * 6;
+      font-weight: $fw-bold;
+      background: linear-gradient(270deg, #88ec00 0%, #000000 100%);
+      border-radius: 0px 4px 4px 0px;
+    }
+
+    &__img {
+      position: relative;
+      width: 150px;
+      height: 100px;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: contain;
+        object-position: right top;
+      }
+    }
+
+    &__content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      height: 100%;
+      padding: $base * 8;
+
+      @media (max-width: $media-max-xl) {
+        padding: $base * 4;
+      }
+    }
+
+    &__count {
+      margin-bottom: $base * 4;
+      color: $white;
+      font-weight: $fw-bold;
+      line-height: 1;
+      opacity: 0.08;
+    }
+
+    &__title {
+      position: relative;
+      z-index: 2;
+      width: 60%;
+      margin-bottom: $base * 4;
+      color: $color-accent;
+      @media (max-width: $media-max-xl) {
+        width: 100%;
+      }
+
+      @media (max-width: $media-max-sm) {
+        font-size: 14px;
+      }
+    }
+
+    &__text {
+      width: 75%;
+      flex: 1;
+      color: #b2b2b2;
+      font-size: $font-size-xs;
+      font-weight: $fw-light;
+      @media (max-width: $media-max-xl) {
+        width: 100%;
+      }
+    }
+  }
+}

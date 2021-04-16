@@ -1,0 +1,106 @@
+.btn {
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 150px;
+  padding: ($base * 6) ($base * 10);
+  font-size: $font-size-sm;
+  font-weight: $fw-bold;
+  line-height: inherit;
+  letter-spacing: $letter-spacing;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: $br-xs;
+  background: transparent;
+  cursor: pointer;
+  transition: $tr-time $tr-type;
+
+  @media (max-width: $media-max-tablet) {
+    padding: ($base * 2) ($base * 4);
+  }
+
+  span {
+    transition: $tr-time $tr-type;
+  }
+
+  &_long {
+    padding-left: $base * 19;
+    padding-right: $base * 19;
+
+    @media (max-width: $media-max-lg) {
+      padding-left: $base * 10;
+      padding-right: $base * 10;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &_main {
+    color: $black;
+    background: $gradient-accent;
+
+    svg {
+      flex: 0 0 21px;
+      width: 21px;
+      height: 100%;
+      margin-top: -$base;
+      margin-right: $base * 2;
+
+      path {
+        fill: $black;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      height: 100%;
+      width: 100px;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 100%);
+      opacity: 0.5;
+      transform: skewX(-45deg);
+      animation: link 2s infinite;
+      transition: all ease 1s;
+    }
+
+    &:hover,
+    &:focus {
+      color: $black;
+    }
+  }
+
+  &_yet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    min-width: initial;
+    padding-left: $horizontal-padding-xl;
+    padding-right: $horizontal-padding-xl;
+
+    span {
+      width: 14px;
+      height: 2px;
+      background-color: $red-700;
+
+      &:nth-child(2) {
+        width: 7px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

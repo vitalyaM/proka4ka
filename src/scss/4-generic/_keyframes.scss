@@ -1,0 +1,37 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    overflow: visible;
+  }
+  100% {
+    opacity: 1;
+    overflow: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    overflow: hidden;
+  }
+  100% {
+    opacity: 0;
+    overflow: visible;
+  }
+}
+
+@keyframes link {
+  0% {
+    left: 0;
+  }
+  33% {
+    left: 87%;
+  }
+  99% {
+    left: 87%;
+  }
+  100% {
+    left: 100%;
+    transform: translateX(50%);
+  }
+}

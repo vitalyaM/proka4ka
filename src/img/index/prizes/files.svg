@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.734" height="61.001"
+  viewBox="0 0 44.734 61.001">
+  <defs>
+    <style>
+      .files-a {
+        fill: url(#files-a);
+      }
+    </style>
+    <linearGradient id="files-a" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#88ec00" />
+      <stop offset="1" stop-color="#e79c07" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(-64)">
+    <g transform="translate(64)">
+      <g transform="translate(0)">
+        <path class="files-a"
+          d="M108.725,11.184a1.017,1.017,0,0,0-.289-.719L98.269.3a1,1,0,0,0-.719-.289V0H67.05A3.05,3.05,0,0,0,64,3.05v54.9A3.05,3.05,0,0,0,67.05,61h38.634a3.05,3.05,0,0,0,3.05-3.05V11.184ZM98.567,3.471l6.7,6.7H99.584A1.017,1.017,0,0,1,98.567,9.15Zm8.133,54.48a1.017,1.017,0,0,1-1.017,1.017H67.05a1.017,1.017,0,0,1-1.017-1.017V3.05A1.017,1.017,0,0,1,67.05,2.033H96.534V9.15a3.05,3.05,0,0,0,3.05,3.05H106.7Z"
+          transform="translate(-64)" />
+      </g>
+    </g>
+    <g transform="translate(71.117 27.45)">
+      <g transform="translate(0)">
+        <path class="files-a"
+          d="M123.05,216a3.05,3.05,0,1,0,3.05,3.05A3.05,3.05,0,0,0,123.05,216Zm0,4.067a1.017,1.017,0,1,1,1.017-1.017A1.017,1.017,0,0,1,123.05,220.067Z"
+          transform="translate(-120 -216)" />
+      </g>
+    </g>
+    <g transform="translate(81.673 29.823)">
+      <g transform="translate(0 0)">
+        <rect class="files-a" width="20" height="2" transform="translate(0.327 0.178)" />
+      </g>
+    </g>
+    <g transform="translate(71.117 17.284)">
+      <g transform="translate(0)">
+        <path class="files-a"
+          d="M123.05,136a3.05,3.05,0,1,0,3.05,3.05A3.05,3.05,0,0,0,123.05,136Zm0,4.067a1.017,1.017,0,1,1,1.017-1.017A1.017,1.017,0,0,1,123.05,140.067Z"
+          transform="translate(-120 -136)" />
+      </g>
+    </g>
+    <g transform="translate(81.673 18.777)">
+      <g transform="translate(0 0)">
+        <rect class="files-a" width="20" height="2" transform="translate(0.327 0.223)" />
+      </g>
+    </g>
+    <g transform="translate(71.117 37.617)">
+      <g transform="translate(0)">
+        <path class="files-a"
+          d="M123.05,296a3.05,3.05,0,1,0,3.05,3.05A3.05,3.05,0,0,0,123.05,296Zm0,4.067a1.017,1.017,0,1,1,1.017-1.017A1.017,1.017,0,0,1,123.05,300.067Z"
+          transform="translate(-120 -296)" />
+      </g>
+    </g>
+    <g transform="translate(81.673 39.763)">
+      <g transform="translate(0 0)">
+        <rect class="files-a" width="20" height="2" transform="translate(0.327 0.237)" />
+      </g>
+    </g>
+    <g transform="translate(71.117 47.784)">
+      <g transform="translate(0)">
+        <path class="files-a"
+          d="M123.05,376a3.05,3.05,0,1,0,3.05,3.05A3.05,3.05,0,0,0,123.05,376Zm0,4.067a1.017,1.017,0,1,1,1.017-1.017A1.017,1.017,0,0,1,123.05,380.067Z"
+          transform="translate(-120 -376)" />
+      </g>
+    </g>
+    <g transform="translate(81.673 49.705)">
+      <g transform="translate(0 0)">
+        <rect class="files-a" width="20" height="2" transform="translate(0.327 0.295)" />
+      </g>
+    </g>
+  </g>
+</svg>
